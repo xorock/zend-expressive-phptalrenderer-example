@@ -1,0 +1,21 @@
+<tal:block
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:tal="http://xml.zope.org/namespaces/tal"
+	xmlns:metal="http://xml.zope.org/namespaces/metal"
+	xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+	xmlns:phptal="http://phptal.org/ns/phptal"
+    metal:use-macro="layout/default.html/html"
+>
+
+    <tal:block metal:fill-slot="title">404 Not Found</tal:block>
+
+    <tal:block metal:fill-slot="content">
+        <h1>Oops!</h1>
+        <h2>This is awkward.</h2>
+        <p>We encountered a 404 Not Found error.</p>
+        <p>
+            You are looking for something that doesn't exist or may have moved. Check out one of the links on this page
+            or head back to <a tal:attributes="href helper:url('home')">Home</a>.
+        </p>
+    </tal:block>
+</tal:block>
